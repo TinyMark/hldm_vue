@@ -3,13 +3,13 @@ import Vue from "vue";
 import Axios from "axios";
 Vue.prototype.$http = Axios;
 
-import mint from "mint-ui";
-import 'mint-ui/lib/style.css';
-Vue.use(mint);
-
 // vuex
 import Vuex from 'vuex';
 Vue.use(Vuex);
+
+import mint from "mint-ui";
+import 'mint-ui/lib/style.css';
+Vue.use(mint);
 
 import VueRouter from "vue-router";
 Vue.use(VueRouter);
@@ -27,7 +27,8 @@ new Vue({
     router: new VueRouter(RouterCfg),
     store: new Vuex.Store({
         state: {
-            asideShow: false
+            asideShow: false,
+            title: "红旅动漫"
         }
     })
 })

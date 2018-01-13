@@ -1,0 +1,61 @@
+section {
+    .mint-swipe {
+        height: 120px;
+        position: relative;
+        img {
+            width: 100%;
+        }
+        span {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            padding-left: 30px;
+            display: block;
+            width: 100%;
+            line-height: 40px;
+            color: #fff;
+            font-size: 14px;
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+        .mint-swipe-indicators {
+            right: 0;
+            left: auto;
+        }
+    }
+    .mint-navbar {
+        .mint-tab-item {
+            &.is-selected {
+                border-bottom: 3px solid #e92322;
+                color: #e92322;
+            }
+            .mint-tab-item-label {
+                font-size: 14px;
+            }
+        }
+    }
+    .mint-tab-container {
+        margin-top: 3px;
+        .items {
+            display: block;
+            width: 46%;
+            float: left;
+            margin: 2%;
+            box-shadow: 0 0 10px #888888;
+            position: relative;
+            img {
+                width: 100%;
+                display: block;
+            }
+            span {
+                position: absolute;
+                bottom: 0;
+                display: block;
+                color: #fff;
+                width: 100%;
+                line-height: 36px;
+                text-align: center;
+                background-color: rgba(0, 0, 0, 0.5);
+            }
+        }
+    }
+}
