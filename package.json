@@ -4,13 +4,12 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"dev": "webpack-dev-server --port 8888",
+		"dev": "webpack-dev-server --port 8989",
 		"build": "webpack"
 	},
 	"author": "TinyMark",
 	"license": "ISC",
 	"devDependencies": {
-		"axios": "^0.17.1",
 		"babel-core": "^6.26.0",
 		"babel-loader": "^7.1.2",
 		"babel-preset-env": "^1.6.1",
@@ -21,13 +20,17 @@
 		"html-webpack-plugin": "^2.30.1",
 		"less": "^2.7.3",
 		"less-loader": "^4.0.5",
-		"mint-ui": "^2.2.13",
 		"style-loader": "^0.19.1",
 		"url-loader": "^0.6.2",
-		"vue": "^2.5.13",
 		"vue-loader": "^13.7.0",
-		"vue-router": "^3.0.1",
 		"vue-template-compiler": "^2.5.13",
 		"webpack": "^3.10.0"
+	},
+	"dependencies": {
+		"axios": "^0.17.1",
+		"mint-ui": "^2.2.13",
+		"vue": "^2.5.13",
+		"vue-router": "^3.0.1",
+		"vuex": "^3.0.1"
 	}
 }

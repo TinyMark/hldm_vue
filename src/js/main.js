@@ -7,6 +7,10 @@ import mint from "mint-ui";
 import 'mint-ui/lib/style.css';
 Vue.use(mint);
 
+// vuex
+import Vuex from 'vuex';
+Vue.use(Vuex);
+
 import VueRouter from "vue-router";
 Vue.use(VueRouter);
 
@@ -19,6 +23,11 @@ import App from "../components/App.vue";
 
 new Vue({
     el: "#App",
-    render: c => c(App),
-    router: new VueRouter(RouterCfg)
+    render: h => h(App),
+    router: new VueRouter(RouterCfg),
+    store: new Vuex.Store({
+        state: {
+            asideShow: false
+        }
+    })
 })
